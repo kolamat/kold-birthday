@@ -15,6 +15,21 @@ body {
   background: #002329;
 }
 
+.gradient {
+  margin: 0;
+  font-size: 35px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #5fffe7, #7bc7fe); /* Gradient colors */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 10px;
+}
+
+.gradient p {
+  margin: 0px;
+  font-size: 25px;
+}
+
 .banner .slider {
   position: absolute;
   width: 200px;
