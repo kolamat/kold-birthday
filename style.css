@@ -4,6 +4,7 @@ body {
   box-sizing: border-box;
   background: #002329;
   color: #d2d2d2;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .banner {
@@ -82,6 +83,25 @@ body {
   z-index: 1;
 }
 
+.banner .content p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 4rem;
+  line-height: 1em;
+  color: #737737;
+  position: fixed;
+  bottom: 270px;
+  left: 160px;
+}
+
+.banner .content p::after {
+  position: absolute;
+  inset: 0 0 0 0;
+  content: attr(data-content);
+  z-index: 2;
+  -webkit-text-stroke: 2px #aca822;
+  color: transparent;
+}
+
 .banner .content h1 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 5rem;
@@ -97,7 +117,7 @@ body {
   inset: 0 0 0 0;
   content: attr(data-content);
   z-index: 2;
-  -webkit-text-stroke: 2px #d2d2d2;
+  -webkit-text-stroke: 2px #aca822;
   color: transparent;
 }
 
@@ -115,7 +135,7 @@ body {
   background-image: url(./images/letterk.png);
   margin-bottom: 15px;
   width: 100%;
-  height: 35vh;
+  height: 15vh;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -129,6 +149,9 @@ body {
   font-size: 30px;
   font-weight: 700;
   text-align: center;
+  background: linear-gradient(90deg, #5fffe7, #7bc7fe); /* Gradient colors */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 button {
@@ -141,6 +164,8 @@ button {
   margin: 8px 0px 8px 0px;
   align-content: center;
   text-align: center;
+  background: #021512;
+  color: #d2d2d2;
 }
 
 @media (min-width: 768px) {
