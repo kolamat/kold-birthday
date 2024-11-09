@@ -126,9 +126,21 @@ body {
 }
 
 #display-area {
-  font-size: larger;
+  font-size: 30px;
+  font-weight: 700;
   text-align: center;
-  margin-top: 50px;
+}
+
+button {
+  padding: 15px;
+  font-size: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: bold;
+  border-radius: 20px;
+  margin: 8px 0px 8px 0px;
+  align-content: center;
+  text-align: center;
 }
 
 @media (min-width: 768px) {

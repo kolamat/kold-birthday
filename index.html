@@ -45,30 +45,9 @@
       </div>
     </div>
 
-    <div id="display-area">Click the button to see items</div>
-    <button onclick="toggleItem()">Next Item</button>
+    <div id="display-area"></div>
+    <button onclick="toggleItem()">Click For Prayers & Gifts</button>
 
-    <script>
-      const kolade = "";
-
-      const items = [
-        "Kolade Johnson Matanmi",
-        "2000012100 - 9jaPay",
-        "8150672809 - opay",
-        "Item 4",
-        "Item 5",
-      ];
-      let currentIndex = 0;
-
-      function toggleItem() {
-        const displayArea = document.getElementById("display-area");
-
-        // Display the current item
-        displayArea.textContent = items[currentIndex];
-
-        // Update the index to the next item
-        currentIndex = (currentIndex + 1) % items.length; // Loops back to start after the last item
-      }
-    </script>
+    <script src="index.js"></script>
   </body>
 </html>
