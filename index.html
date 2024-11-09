@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Birthday</title>
+  </head>
+  <body>
+    <div class="banner">
+      <div class="slider" style="--quantity: 12">
+        <div class="item" style="--position: 1">
+          <img src="../images/Bcake.jpg" alt="" />
+        </div>
+        <div class="item" style="--position: 2">
+          <img src="../images/kolade1.jpg" alt="" />
+        </div>
+        <div class="item" style="--position: 3">
+          <img src="../images/kolade3.jpg" alt="" />
+        </div>
+        <div class="item" style="--position: 4">
+          <img src="../images/kolade (2).jpg" alt="" />
+        </div>
+        <div class="item" style="--position: 5">
+          <img src="../images/kolade (2).jpg" alt="" />
+        </div>
+        <div class="item" style="--position: 6">
+          <img src="../images/kolade (2).jpg" alt="" />
+        </div>
+        <div class="item" style="--position: 7">
+          <img src="../images/kolade (2).jpg" alt="" />
+        </div>
+        <div class="item" style="--position: 8">
+          <img src="../images/kolade (2).jpg" alt="" />
+        </div>
+        <div class="item" style="--position: 9">
+          <img src="../images/kolade (2).jpg" alt="" />
+        </div>
+        <div class="item" style="--position: 10">
+          <img src="../images/kolade (2).jpg" alt="" />
+        </div>
+        <div class="item" style="--position: 11">
+          <img src="../images/kolade (2).jpg" alt="" />
+        </div>
+        <div class="item" style="--position: 12">
+          <img src="../images/kolade (2).jpg" alt="" />
+        </div>
+        <div class="content">
+          <div class="model"></div>
+          <h1 data-content="kolade"></h1>
+        </div>
+      </div>
+    </div>
+
+    <div id="display-area">Click the button to see items</div>
+    <button onclick="toggleItem()">Next Item</button>
+
+    <script>
+      const kolade = "";
+
+      const items = [
+        "Kolade Johnson Matanmi",
+        "2000012100 - 9jaPay",
+        "8150672809 - opay",
+        "Item 4",
+        "Item 5",
+      ];
+      let currentIndex = 0;
+
+      function toggleItem() {
+        const displayArea = document.getElementById("display-area");
+
+        // Display the current item
+        displayArea.textContent = items[currentIndex];
+
+        // Update the index to the next item
+        currentIndex = (currentIndex + 1) % items.length; // Loops back to start after the last item
+      }
+    </script>
+  </body>
+</html>
