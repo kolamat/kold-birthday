@@ -108,6 +108,7 @@ const items = [
   "2000012100 - 9jaPay",
   "8150672809 - opay",
   "Kolade Johnson Matanmi",
+  "Thank you very much friend's and family's",
 ];
 let currentIndex = 0;
 
